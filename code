@@ -1,0 +1,21 @@
+def uniqueNumber(z):
+    for i in range (1,len(z)):
+        x=z.count(z[i])
+        if x==1:
+            print (z[i])
+            y=z[i]
+            print("the unique number is",y)
+            
+
+numbers= input("Enter the numbers seperated by comma:")
+list_of_numbers= numbers.split(",")
+print(list_of_numbers)
+no_of_numbers=int(list_of_numbers[0])
+print(no_of_numbers)
+
+
+for i in range(len(list_of_numbers)):
+    list_of_numbers[i]=int(list_of_numbers[i])
+
+print(list_of_numbers)
+uniqueNumber(list_of_numbers)
